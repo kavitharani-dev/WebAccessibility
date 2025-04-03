@@ -30,19 +30,37 @@
                         <td><input type="text"></td>
                     </tr> 
                     <div class="form_group">
-                    <tr>
-                     <td style="padding-right: 40px;">Title</td>
-                        <td style="padding-right: 40px;"><select>
-                            <option>-Select-</option>
-                            <option value="28">Mr.</option>
-                            <option value="29">Ms.</option>
-                            <option value="30">Mrs.</option>
-                        </select></td>
-                        <td style="padding-right: 60px;">Name<span style="color: red;">*</span></td>
-                        <td style="padding-right: 60px;"><input type="text"></td>
-                        <td style="padding-right: 30px;">Surname</td>
-                        <td><input type="text"></td>
-                    </tr>
+                <tr>
+    <!-- Title Dropdown with Proper Label -->
+    <td style="padding-right: 40px;">
+        <label for="title">Title</label>
+    </td>
+    <td style="padding-right: 40px;">
+        <select id="title" name="title" aria-required="true">
+            <option value="" disabled selected>Select your title</option>
+            <option value="28">Mr.</option>
+            <option value="29">Ms.</option>
+            <option value="30">Mrs.</option>
+        </select>
+    </td>
+
+    <!-- Name Input Field with Label & Required Attribute -->
+    <td style="padding-right: 60px;">
+        <label for="name">Name<span style="color: red;">*</span></label>
+    </td>
+    <td style="padding-right: 60px;">
+        <input type="text" id="name" name="name" aria-required="true" required>
+    </td>
+
+    <!-- Surname Input Field with Proper Label -->
+    <td style="padding-right: 30px;">
+        <label for="surname">Surname</label>
+    </td>
+    <td>
+        <input type="text" id="surname" name="surname">
+    </td>
+</tr>
+
 
                     <tr>
                         <td style="padding-right: 40px;">Address Line 1<span style="color: red;">*</span></td>
